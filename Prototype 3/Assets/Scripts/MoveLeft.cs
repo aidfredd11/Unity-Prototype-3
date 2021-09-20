@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
@@ -17,11 +15,11 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playerControllerScript.gameOver == false)
+        if (playerControllerScript.gameOver == false)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
-        if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
+        if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
         }
