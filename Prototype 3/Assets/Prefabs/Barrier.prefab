@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5658300160547478352}
   - component: {fileID: 3375124969331544681}
   - component: {fileID: 6913341210370595932}
+  - component: {fileID: 876653113090454146}
   m_Layer: 0
   m_Name: Barrier
   m_TagString: Obstacle
@@ -58,8 +59,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c633d9a0c21dfa46ae26ee289c26b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  currentSpeed: 7
+  maxSpeed: 10000
+  acceleration: 1
   leftBound: -4
+--- !u!65 &876653113090454146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5658300160547190640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6098621, y: 0.17206813, z: 3.1231153}
+  m_Center: {x: 0, y: 0.063280635, z: 0}
 --- !u!1 &5658300160547190654
 GameObject:
   m_ObjectHideFlags: 0

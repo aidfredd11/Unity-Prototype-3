@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1029198640100862199}
   - component: {fileID: 1688290207708543567}
   - component: {fileID: 9086190207438189131}
+  - component: {fileID: 200858923400411658}
   m_Layer: 0
   m_Name: Pylon
   m_TagString: Obstacle
@@ -125,8 +126,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.7619084, z: 0.9551818}
-  m_Center: {x: 0, y: 0.8739539, z: -0.0044818223}
+  m_Size: {x: 0.9235584, y: 1.4664696, z: 0.9316787}
+  m_Center: {x: 0, y: 0.7262345, z: 0.0072697103}
 --- !u!114 &9086190207438189131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,5 +140,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c633d9a0c21dfa46ae26ee289c26b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  currentSpeed: 7
+  maxSpeed: 10000
+  acceleration: 1
   leftBound: -4
+--- !u!65 &200858923400411658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029198640100635863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6675873, y: 0.2943964, z: 0.6554667}
+  m_Center: {x: 0, y: 1.6023004, z: 0}
